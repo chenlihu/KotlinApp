@@ -13,15 +13,22 @@
         android:theme="@style/Theme.KotlinApp"
         tools:targetApi="31">
         <activity
+            android:name=".controls.ControlsMainActivity"
+            android:theme="@style/Theme.JavaApp"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".intent.IntentSubMainActivity"
+            android:theme="@style/Theme.JavaApp"
             android:exported="false" />
         <activity
             android:name=".intent.IntentMainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".menu.MenuMainActivity"
