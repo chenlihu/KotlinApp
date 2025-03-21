@@ -19,4 +19,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="增加进度"/>
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开对话框"/>
 </androidx.appcompat.widget.LinearLayoutCompat>
