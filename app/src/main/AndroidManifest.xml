@@ -13,7 +13,7 @@
         android:theme="@style/Theme.KotlinApp"
         tools:targetApi="31">
         <activity
-            android:name=".controls.ControlsMainActivity"
+            android:name=".customtitle.TitleLayoutMainActivity"
             android:theme="@style/Theme.JavaApp"
             android:exported="true">
             <intent-filter>
@@ -23,13 +23,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".controls.ControlsMainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.JavaApp">
+        </activity>
+        <activity
             android:name=".intent.IntentSubMainActivity"
-            android:theme="@style/Theme.JavaApp"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.JavaApp" />
         <activity
             android:name=".intent.IntentMainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".menu.MenuMainActivity"
             android:exported="true"
