@@ -20,7 +20,6 @@ class IntentSubMainActivity : ComponentActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         val button1 = findViewById<Button>(R.id.button1)
         button1.setOnClickListener {
             val intent = Intent()
