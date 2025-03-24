@@ -14,6 +14,7 @@ class RecyclerListViewMainActivity : AppCompatActivity() {
         initFruits()
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
         val layoutManager = LinearLayoutManager(this)
+        layoutManager.orientation = LinearLayoutManager.HORIZONTAL
         recyclerView.layoutManager = layoutManager
         val adapter = FruitAdapter(fruitList)
         recyclerView.adapter = adapter
