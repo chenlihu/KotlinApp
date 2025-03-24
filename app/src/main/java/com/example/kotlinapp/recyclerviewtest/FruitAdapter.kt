@@ -16,7 +16,7 @@ class FruitAdapter(val fruitList: List<Fruit>): RecyclerView.Adapter<FruitAdapte
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.listview_item_h, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.listview_item_2, parent, false)
         val viewHolder = ViewHolder(view)
         viewHolder.itemView.setOnClickListener {
             val position = viewHolder.adapterPosition
