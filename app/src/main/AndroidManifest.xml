@@ -13,7 +13,7 @@
         android:theme="@style/Theme.JavaApp"
         tools:targetApi="31">
         <activity
-            android:name=".recyclerviewtest.RecyclerListViewMainActivity"
+            android:name=".uibestpractice.UiBestMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,13 +22,16 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".recyclerviewtest.RecyclerListViewMainActivity"
+            android:exported="true"/>
+        <activity
             android:name=".listviewtest.ListViewMainActivity"
             android:exported="true"
             android:theme="@style/Theme.JavaApp" />
         <activity
             android:name=".customtitle.TitleLayoutMainActivity"
             android:exported="true"
-            android:theme="@style/Theme.JavaApp"/>
+            android:theme="@style/Theme.JavaApp" />
         <activity
             android:name=".controls.ControlsMainActivity"
             android:exported="true"
