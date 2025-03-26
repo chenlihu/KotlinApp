@@ -42,4 +42,20 @@ fun main() {
         append("Ate all fruits.")
     }
     println(ret.toString())
+
+    println("--------------------------------------------------------------")
+
+    // 非局部返回 允许在 Lambda 表达式中直接返回到外层函数，而不是仅仅从 Lambda 表达式本身返回。
+    println("测试内联函数return的作用   非局部返回")
+    println("myInlineFunc start")
+    myInlineFunc {
+//     return
+    }
+    println("myInlineFunc end")
+}
+
+inline fun myInlineFunc(block: () -> Unit) {
+    println("block start")
+    block()
+    println("block end")
 }
