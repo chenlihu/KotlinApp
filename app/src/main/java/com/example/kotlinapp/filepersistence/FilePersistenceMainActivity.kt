@@ -31,6 +31,7 @@ class FilePersistenceMainActivity : AppCompatActivity() {
         val inputText = load()
         if (inputText.isNotEmpty()) {
             editText.setText(inputText)
+            // 设置光标到文件末尾
             editText.setSelection(inputText.length)
             Toast.makeText(this, "Restoring succeeded", Toast.LENGTH_SHORT).show()
         }
